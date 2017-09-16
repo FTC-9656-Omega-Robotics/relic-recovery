@@ -35,10 +35,10 @@ You guys make branches, clones of the original master tree.
 You guys can edit the codebase in your local branches and then push (publish) to the online copy 
 of your branches. Finally, you can push a merge request with the original master tree 
 (if your revisions are good, then the master tree will
-abosrb them with approval from an admin).
+absorb them with approval from an admin).
 
 Additional info (how to undo, push, etc.) can be found by googling and reading documentation 
 provided by other sources.
 
-I recommend this (http://rogerdudler.github.io/git-guide/)
+I recommend http://rogerdudler.github.io/git-guide/
     
