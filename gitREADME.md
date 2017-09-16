@@ -11,8 +11,7 @@ Then,
 1. cd to a directory you want to clone the master branch in. E.g.,
 ```cd Desktop```
 2. Then do the following
-    ``` 
-    git init
+``` git init
     git clone https://gitlab.com/ftc-9656/relic-recovery.git
     git checkout -b firstNameLowercase
     ```
