@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\Users\\Jonathan\\Desktop\\relic-recovery\\TeamCode\\build\\intermediates\\res\\merged\\debug\\xml\\squarebot.xml",
+        "source": "C:\\Users\\Jonathan\\.android\\build-cache\\fcf3f566e0ca20976479c6d5607cda580f723d15\\output\\res\\xml\\squarebot.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jonathan\\Desktop\\relic-recovery\\TeamCode\\build\\intermediates\\res\\merged\\debug\\xml\\device_filter.xml",
+        "source": "C:\\Users\\Jonathan\\Desktop\\relic-recovery\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\xml\\device_filter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jonathan\\Desktop\\relic-recovery\\TeamCode\\build\\intermediates\\res\\merged\\debug\\xml\\k9legacybot.xml",
+        "source": "C:\\Users\\Jonathan\\.android\\build-cache\\fcf3f566e0ca20976479c6d5607cda580f723d15\\output\\res\\xml\\k9legacybot.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jonathan\\Desktop\\relic-recovery\\TeamCode\\build\\intermediates\\res\\merged\\debug\\xml\\pushbotsens.xml",
+        "source": "C:\\Users\\Jonathan\\.android\\build-cache\\fcf3f566e0ca20976479c6d5607cda580f723d15\\output\\res\\xml\\pushbotsens.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jonathan\\Desktop\\relic-recovery\\TeamCode\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
+        "source": "C:\\Users\\Jonathan\\Desktop\\relic-recovery\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\xml\\preferences.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jonathan\\Desktop\\relic-recovery\\TeamCode\\build\\intermediates\\res\\merged\\debug\\xml\\pushbot.xml",
+        "source": "C:\\Users\\Jonathan\\.android\\build-cache\\fcf3f566e0ca20976479c6d5607cda580f723d15\\output\\res\\xml\\pushbot.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jonathan\\Desktop\\relic-recovery\\TeamCode\\build\\intermediates\\res\\merged\\debug\\xml\\k9usbbot.xml",
+        "source": "C:\\Users\\Jonathan\\.android\\build-cache\\fcf3f566e0ca20976479c6d5607cda580f723d15\\output\\res\\xml\\k9usbbot.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jonathan\\Desktop\\relic-recovery\\TeamCode\\build\\intermediates\\res\\merged\\debug\\xml\\advanced_rc_settings.xml",
+        "source": "C:\\Users\\Jonathan\\.android\\build-cache\\fcf3f566e0ca20976479c6d5607cda580f723d15\\output\\res\\xml\\advanced_rc_settings.xml"
+    }
+]

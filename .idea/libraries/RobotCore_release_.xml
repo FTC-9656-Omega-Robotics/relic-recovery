@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="RobotCore-release-">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/3731c87442b1ec5d6f3754a7607f1e439eb9bb02/output/jars/libs/gson-2.8.0.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/3731c87442b1ec5d6f3754a7607f1e439eb9bb02/output/jars/libs/Vuforia.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/3731c87442b1ec5d6f3754a7607f1e439eb9bb02/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/3731c87442b1ec5d6f3754a7607f1e439eb9bb02/output/jars/libs/gson-extras-0.2.1.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/3731c87442b1ec5d6f3754a7607f1e439eb9bb02/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/3731c87442b1ec5d6f3754a7607f1e439eb9bb02/output/jars/libs/support-annotations-23.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/libs/RobotCore-release-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

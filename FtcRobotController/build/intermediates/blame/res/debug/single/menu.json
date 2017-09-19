@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Jonathan\\Desktop\\relic-recovery\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\menu\\main_menu.xml",
+        "source": "C:\\Users\\Jonathan\\.android\\build-cache\\4b53846dd3a75252bf832d5eea6b559417b7bb2c\\output\\res\\menu\\main_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jonathan\\Desktop\\relic-recovery\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\menu\\menu_server.xml",
+        "source": "C:\\Users\\Jonathan\\.android\\build-cache\\68cd2d9bae8fda0203b3e72a6ea9fc1f89460691\\output\\res\\menu\\menu_server.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jonathan\\Desktop\\relic-recovery\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\menu\\ftc_robot_controller.xml",
+        "source": "C:\\Users\\Jonathan\\Desktop\\relic-recovery\\FtcRobotController\\src\\main\\res\\menu\\ftc_robot_controller.xml"
+    }
+]
