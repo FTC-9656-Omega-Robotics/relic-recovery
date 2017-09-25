@@ -26,7 +26,7 @@ Then,
     git checkout -b firstNameLowercase
 ```
 4. You now have a working personal branch of the master branch.
-5. (To have your personal branch show up on Gitlab.com) Do the following (if terminal corrects your command, do its recommended command instead).
+5. *To have your personal branch show up on Gitlab.com*--Do the following (if terminal corrects your command, do its recommended command instead).
 
 ```bash
     git push
