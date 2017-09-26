@@ -5,38 +5,53 @@ package org.firstinspires.ftc.teamcode;
  */
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
-@Autonomous(name = "OmegaMotorAuto", group = "Testers")
-@Disabled
+@Autonomous(name = "MotorAuto", group = "Testers")
+//@Disabled
 
-public class OmegaMotorAuto extends LinearOpMode {
+public class MotorAuto extends LinearOpMode {
 
     private DcMotor leftDrive;
+    private DcMotor rightDrive;
 
     private int initialPos, finalPos;
 
     private ElapsedTime     runtime = new ElapsedTime();
 
 
+
+
+    @Override
     public void runOpMode() {
         leftDrive = hardwareMap.dcMotor.get("left_drive");
+        rightDrive = hardwareMap.dcMotor.get("right_drive");
+
         leftDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        rightDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+
+        rightDrive.setDirection(DcMotor.Direction.REVERSE);
+
         initialPos = leftDrive.getCurrentPosition();
+
 
         waitForStart();
 
         telemetry.addData("Initial position", initialPos);
         runtime.reset();
 
-        while (opModeIsActive() && runtime.seconds() < 1) {
+        while (opModeIsActive() && runtime.seconds() < 10) {
             leftDrive.setPower(1);
+            rightDrive.setPower(1);
         }
 
         leftDrive.setPower(0);
+        rightDrive.setPower(0);
 
         finalPos = leftDrive.getCurrentPosition();
         telemetry.addData("Final position", finalPos);
