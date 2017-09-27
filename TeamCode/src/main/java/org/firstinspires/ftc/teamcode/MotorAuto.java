@@ -9,6 +9,7 @@ import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
+import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
@@ -19,6 +20,8 @@ public class MotorAuto extends LinearOpMode {
 
     private DcMotor leftDrive;
     private DcMotor rightDrive;
+    private Servo leftServo;
+    private Servo rightServo;
 
     private int initialPos, finalPos;
 
@@ -31,6 +34,8 @@ public class MotorAuto extends LinearOpMode {
     public void runOpMode() {
         leftDrive = hardwareMap.dcMotor.get("left_drive");
         rightDrive = hardwareMap.dcMotor.get("right_drive");
+        leftServo = hardwareMap.servo.get("left_servo");
+        rightServo = hardwareMap.servo.get("right_servo");
 
         leftDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         rightDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
@@ -48,10 +53,14 @@ public class MotorAuto extends LinearOpMode {
         while (opModeIsActive() && runtime.seconds() < 10) {
             leftDrive.setPower(1);
             rightDrive.setPower(1);
+            leftServo.setPosition(1);
+            rightServo.setPosition(1);
         }
 
         leftDrive.setPower(0);
         rightDrive.setPower(0);
+        leftServo.setPosition(0);
+        rightServo.setPosition(0);
 
         finalPos = leftDrive.getCurrentPosition();
         telemetry.addData("Final position", finalPos);
