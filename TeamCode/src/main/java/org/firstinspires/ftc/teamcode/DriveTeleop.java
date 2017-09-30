@@ -10,17 +10,15 @@ import com.qualcomm.robotcore.hardware.Servo;
 
 public class DriveTeleop extends OpMode {
 
-    DcMotor leftDrive;        //before using a variable you have to declare it
-    DcMotor rightDrive;
+    OmegaBot robot = new OmegaBot(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 
     public float leftY;        //float is a data type for decimals
     public float rightY;
 
     @Override
     public void init() {
-        leftDrive = hardwareMap.dcMotor.get("left_drive");        //called left_drive in the config file
-        leftDrive.setDirection(DcMotor.Direction.REVERSE);        //variables should be initialized in init()
-        rightDrive = hardwareMap.dcMotor.get("right_drive");
+        robot.init(hardwareMap);
+        telemetry.addData("Initialization", "Complete");
     }
 
     @Override
@@ -28,7 +26,7 @@ public class DriveTeleop extends OpMode {
         leftY = gamepad1.left_stick_y;            //joystick values range from -1 to 1
         rightY = gamepad1.right_stick_y;
 
-        leftDrive.setPower(leftY);
-        rightDrive.setPower(rightY);
+        robot.leftDrive.setPower(leftY);
+        robot.rightDrive.setPower(rightY);
     }
 }
