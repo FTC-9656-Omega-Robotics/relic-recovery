@@ -1,34 +1,72 @@
 package org.firstinspires.ftc.teamcode;
 
-import com.qualcomm.robotcore.eventloop.opmode.OpMode;
-import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-import com.qualcomm.robotcore.hardware.DcMotor;
-import com.qualcomm.robotcore.hardware.Servo;
+/**
+ * Created by tvt on 9/21/17.
+ */
 
-@TeleOp(name="OmegaMotorTester", group="Testers")
+import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.OpMode;
+import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
+import com.qualcomm.robotcore.hardware.Servo;
+import com.qualcomm.robotcore.util.ElapsedTime;
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+
+@Autonomous(name = "MotorAuto", group = "Testers")
 //@Disabled
 
-public class OmegaDriveTeleop extends OpMode {
+public class MotorAuto extends LinearOpMode {
 
-    DcMotor leftDrive;        //before using a variable you have to declare it
-    DcMotor rightDrive;
+    private DcMotor leftDrive;
+    private DcMotor rightDrive;
+    private Servo leftServo;
+    private Servo rightServo;
 
-    public float leftY;        //float is a data type for decimals
-    public float rightY;
+    private int initialPos, finalPos;
+
+    private ElapsedTime     runtime = new ElapsedTime();
+
+
+
 
     @Override
-    public void init() {
-        leftDrive = hardwareMap.dcMotor.get("left_drive");        //called left_drive in the config file
-        leftDrive.setDirection(DcMotor.Direction.REVERSE);        //variables should be initialized in init()
+    public void runOpMode() {
+        leftDrive = hardwareMap.dcMotor.get("left_drive");
         rightDrive = hardwareMap.dcMotor.get("right_drive");
-    }
+        leftServo = hardwareMap.servo.get("left_servo");
+        rightServo = hardwareMap.servo.get("right_servo");
 
-    @Override
-    public void loop() {
-        leftY = gamepad1.left_stick_y;            //joystick values range from -1 to 1
-        rightY = gamepad1.right_stick_y;
+        leftDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        rightDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
 
-        leftDrive.setPower(leftY);
-        rightDrive.setPower(rightY);
+        rightDrive.setDirection(DcMotor.Direction.REVERSE);
+
+        initialPos = leftDrive.getCurrentPosition();
+
+
+        waitForStart();
+
+        telemetry.addData("Initial position", initialPos);
+        runtime.reset();
+
+        while (opModeIsActive() && runtime.seconds() < 10) {
+            leftDrive.setPower(1);
+            rightDrive.setPower(1);
+            leftServo.setPosition(1);
+            rightServo.setPosition(1);
+        }
+
+        leftDrive.setPower(0);
+        rightDrive.setPower(0);
+        leftServo.setPosition(0);
+        rightServo.setPosition(0);
+
+        finalPos = leftDrive.getCurrentPosition();
+        telemetry.addData("Final position", finalPos);
+
+        telemetry.addData("Change in position", finalPos - initialPos);
+
+
     }
 }
