@@ -28,8 +28,6 @@ public class MotorAuto extends LinearOpMode {
     private ElapsedTime     runtime = new ElapsedTime();
 
 
-
-
     @Override
     public void runOpMode() {
         leftDrive = hardwareMap.dcMotor.get("left_drive");
