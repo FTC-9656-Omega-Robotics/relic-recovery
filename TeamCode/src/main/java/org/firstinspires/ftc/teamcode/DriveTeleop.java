@@ -3,24 +3,25 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
-import com.qualcomm.robotcore.hardware.Servo;
 
 @TeleOp(name="DriveTeleop", group="Testers")
 //@Disabled
 
 public class DriveTeleop extends OpMode {
 
-    DcMotor leftDrive;        //before using a variable you have to declare it
-    DcMotor rightDrive;
+    OmegaBot robot = new OmegaBot(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 
     public float leftY;        //float is a data type for decimals
     public float rightY;
 
     @Override
     public void init() {
-        leftDrive = hardwareMap.dcMotor.get("left_drive");        //called left_drive in the config file
-        leftDrive.setDirection(DcMotor.Direction.REVERSE);        //variables should be initialized in init()
-        rightDrive = hardwareMap.dcMotor.get("right_drive");
+        robot.init(hardwareMap);
+        telemetry.addData("Initialization", "Complete");
+
+        robot.leftServo.setPosition(0);
+        robot.rightServo.setPosition(0);
+
     }
 
     @Override
@@ -28,7 +29,19 @@ public class DriveTeleop extends OpMode {
         leftY = gamepad1.left_stick_y;            //joystick values range from -1 to 1
         rightY = gamepad1.right_stick_y;
 
-        leftDrive.setPower(leftY);
-        rightDrive.setPower(rightY);
+        if (gamepad2.left_bumper) {
+            robot.leftServo.setPosition(180);
+        } else {
+            robot.leftServo.setPosition(0);
+        }
+
+        if (gamepad2.right_bumper) {
+            robot.rightServo.setPosition(180);
+        } else {
+            robot.rightServo.setPosition(0);
+        }
+
+        robot.leftDrive.setPower(leftY);        //set power of driving motors equal to the joystick values
+        robot.rightDrive.setPower(rightY);
     }
 }
