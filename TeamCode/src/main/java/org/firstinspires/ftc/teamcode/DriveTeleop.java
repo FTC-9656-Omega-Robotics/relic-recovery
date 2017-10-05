@@ -29,13 +29,16 @@ public class DriveTeleop extends OpMode {
         leftY = gamepad1.left_stick_y;            //joystick values range from -1 to 1
         rightY = gamepad1.right_stick_y;
 
-        if (gamepad2.left_bumper) {
+        leftServo.setPosition(leftY);            //makes left motor move through gamepad joystick value
+        rightServo.setPosition(rightY);
+
+        if (gamepad2.left_stick_y < 0) {
             robot.leftServo.setPosition(180);
         } else {
             robot.leftServo.setPosition(0);
         }
 
-        if (gamepad2.right_bumper) {
+        if (gamepad2.right_stick_y < 0) {
             robot.rightServo.setPosition(180);
         } else {
             robot.rightServo.setPosition(0);
