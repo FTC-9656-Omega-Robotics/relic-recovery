@@ -1,5 +1,6 @@
 package org.firstinspires.ftc.teamcode;
 
+import com.qualcomm.robotcore.hardware.ColorSensor;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
@@ -15,6 +16,7 @@ public class OmegaBot {
     public DcMotor rightDrive = null;
     public Servo leftServo = null;
     public Servo rightServo = null;
+    public ColorSensor colorSensor;
 
     private DcMotor.RunMode initialMode = null;
 
@@ -33,6 +35,7 @@ public class OmegaBot {
         rightDrive = map.dcMotor.get("right_drive");
         leftServo = map.servo.get("left_servo");
         rightServo = map.servo.get("right_servo");
+        colorSensor = map.colorSensor.get("color_sensor");
 
         leftDrive.setMode(initialMode);
         rightDrive.setMode(initialMode);
