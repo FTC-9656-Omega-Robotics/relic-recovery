@@ -36,14 +36,13 @@ public class OmegaBot {
         leftServo = map.servo.get("left_servo");
         rightServo = map.servo.get("right_servo");
         colorSensor = map.colorSensor.get("color_sensor");
+        colorSensor.enableLed(true);
 
         leftDrive.setMode(initialMode);
         rightDrive.setMode(initialMode);
 
         leftDrive.setDirection(DcMotorSimple.Direction.REVERSE);
         rightDrive.setDirection(DcMotorSimple.Direction.FORWARD);
-
-        stopRobot();
     }
 
     public void stopRobot() {

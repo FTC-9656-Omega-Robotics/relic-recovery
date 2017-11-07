@@ -9,7 +9,7 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
-@Autonomous(name = "ColorRedAuto", group = "Testers")
+@Autonomous(name = "ColorBlueAuto", group = "Testers")
 //@Disabled
 
 public class ColorBlueAuto extends LinearOpMode {
@@ -30,17 +30,22 @@ public class ColorBlueAuto extends LinearOpMode {
 
 
         waitForStart();
+        while (opModeIsActive()) {
+            if (robot.colorSensor.blue() > robot.colorSensor.red()) {
+                while (runtime.seconds() < 2) {
+                    robot.leftDrive.setPower(-1);
+                    robot.rightDrive.setPower(-1);
+                }
+            }
 
-        if (robot.colorSensor.blue() > 20) {
-            while (runtime.seconds() < 2) {
-                robot.leftDrive.setPower(-1);
-                robot.rightDrive.setPower(-1);
+            if (robot.colorSensor.blue() > robot.colorSensor.red()) {
+                telemetry.addLine("I see blue.");
+            } else {
+                telemetry.addLine("I don't see blue.");
             }
-        } else {
-            while (runtime.seconds() < 2) {
-                robot.leftDrive.setPower(1);
-                robot.rightDrive.setPower(1);
-            }
+            telemetry.addData("Blueness", robot.colorSensor.blue());
+            telemetry.addData("Redness", robot.colorSensor.red());
+            telemetry.update();
         }
     }
 }
