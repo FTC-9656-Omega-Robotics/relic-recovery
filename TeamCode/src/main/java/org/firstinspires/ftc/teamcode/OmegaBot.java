@@ -14,9 +14,9 @@ public class OmegaBot {
 
     public DcMotor leftDrive = null;
     public DcMotor rightDrive = null;
-    public Servo leftServo = null;
+    public DcMotor arm = null;
     public Servo rightServo = null;
-    public ColorSensor colorSensor;
+    public ColorSensor colorSensor = null;
 
     private DcMotor.RunMode initialMode = null;
 
@@ -33,9 +33,11 @@ public class OmegaBot {
 
         leftDrive = map.dcMotor.get("left_drive");
         rightDrive = map.dcMotor.get("right_drive");
-        leftServo = map.servo.get("left_servo");
+        arm = map.dcMotor.get("arm");
+
         rightServo = map.servo.get("right_servo");
         colorSensor = map.colorSensor.get("color_sensor");
+
         colorSensor.enableLed(true);
 
         leftDrive.setMode(initialMode);
@@ -43,6 +45,7 @@ public class OmegaBot {
 
         leftDrive.setDirection(DcMotorSimple.Direction.REVERSE);
         rightDrive.setDirection(DcMotorSimple.Direction.FORWARD);
+        arm.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
     }
 
     public void stopRobot() {
