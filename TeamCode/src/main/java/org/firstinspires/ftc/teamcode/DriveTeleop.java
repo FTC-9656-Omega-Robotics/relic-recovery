@@ -27,6 +27,8 @@ public class DriveTeleop extends OpMode {
 
         robot.rightServo.setPosition(0);
         //robot.rightServo.setDirection(Servo.Direction.REVERSE);
+        robot.leftDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.FLOAT);
+        robot.rightDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.FLOAT);
         robot.arm.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
 
     }
@@ -37,9 +39,9 @@ public class DriveTeleop extends OpMode {
         rightY = gamepad1.right_stick_y;
 
 
-        if (gamepad1.right_bumper) {
+        if (gamepad2.right_bumper) {
             robot.rightServo.setPosition(1);
-        } else if (gamepad1.right_trigger > 0) {
+        } else if (gamepad2.left_bumper) {
             robot.rightServo.setPosition(0);
         }
 
