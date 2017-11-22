@@ -15,7 +15,7 @@ import com.qualcomm.robotcore.hardware.Servo;
 
 public class DriveTeleop extends OpMode {
 
-    OmegaBot robot = new OmegaBot(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+    OmegaBot robot = new OmegaBot(DcMotor.RunMode.RUN_USING_ENCODER);
 
     public float leftY;        //float is a data type for decimals
     public float rightY;
@@ -27,9 +27,6 @@ public class DriveTeleop extends OpMode {
 
         robot.rightServo.setPosition(0);
         //robot.rightServo.setDirection(Servo.Direction.REVERSE);
-        robot.leftDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.FLOAT);
-        robot.rightDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.FLOAT);
-        robot.arm.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
 
     }
 

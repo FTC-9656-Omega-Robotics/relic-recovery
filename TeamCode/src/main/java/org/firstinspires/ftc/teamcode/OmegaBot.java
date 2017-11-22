@@ -33,18 +33,20 @@ public class OmegaBot {
 
         leftDrive = map.dcMotor.get("left_drive");
         rightDrive = map.dcMotor.get("right_drive");
-        arm = map.dcMotor.get("arm");
 
+        arm = map.dcMotor.get("arm");
         rightServo = map.servo.get("right_servo");
+
         colorSensor = map.colorSensor.get("color_sensor");
 
         colorSensor.enableLed(true);
 
         leftDrive.setMode(initialMode);
         rightDrive.setMode(initialMode);
+        arm.setMode(initialMode);
 
-        leftDrive.setDirection(DcMotorSimple.Direction.REVERSE);
-        rightDrive.setDirection(DcMotorSimple.Direction.FORWARD);
+        leftDrive.setDirection(DcMotorSimple.Direction.FORWARD);
+        rightDrive.setDirection(DcMotorSimple.Direction.REVERSE);
 
         leftDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         rightDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
