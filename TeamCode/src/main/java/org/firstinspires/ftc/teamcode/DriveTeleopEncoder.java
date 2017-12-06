@@ -58,13 +58,13 @@ public class DriveTeleopEncoder extends OpMode {
         telemetry.addData("Encoder Position", position);
 
         if (gamepad2.a) {
-            position=position+1; //1120 ticks = 360 deg IRL
+            position = position+1; //1120 ticks = 360 deg IRL
             robot.arm.setTargetPosition(position);
             robot.arm.setPower(.5);
         } else  if (gamepad2.b) {
-            position=position-1;
+            position = position-1;
             robot.arm.setTargetPosition(position);
-            robot.arm.setPower(.5);
+            robot.arm.setPower(-0.5);
         } else {
             robot.arm.setTargetPosition(position);
         }
@@ -76,7 +76,7 @@ public class DriveTeleopEncoder extends OpMode {
         }
 
         if (gamepad2.y) {
-            robot.colorServo.setPosition(1);
+            robot.colorServo.setPosition(0.7);
         }
         else if (gamepad2.x){
             robot.colorServo.setPosition(0);

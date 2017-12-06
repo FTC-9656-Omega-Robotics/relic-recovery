@@ -33,7 +33,7 @@ public class DriveTeleop extends OpMode {
     @Override
     public void loop() {
         robot.leftDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-        robot.rightDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.FLOAT);
+        robot.rightDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         robot.arm.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
 
         leftY = gamepad1.left_stick_y;            //joystick values range from -1 to 1
@@ -43,7 +43,7 @@ public class DriveTeleop extends OpMode {
         robot.rightDrive.setPower(rightY);
 
         if (gamepad2.right_bumper) {
-            robot.rightServo.setPosition(1);
+            robot.rightServo.setPosition(0.3);
         } else if (gamepad2.left_bumper) {
             robot.rightServo.setPosition(0);
         }
@@ -54,11 +54,12 @@ public class DriveTeleop extends OpMode {
             robot.arm.setPower(-1);
         } else {
             robot.arm.setPower(0);
+            robot.arm.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         }
         telemetry.addData("Encoder Position", position);
 
         if (gamepad2.right_bumper) {
-            robot.rightServo.setPosition(1);
+            robot.rightServo.setPosition(0.7);
         } else if (gamepad2.left_bumper){
             robot.rightServo.setPosition(0);
         }
@@ -67,7 +68,7 @@ public class DriveTeleop extends OpMode {
             robot.colorServo.setPosition(1);
         }
         else if (gamepad2.x){
-            robot.colorServo.setPosition(0);
+            robot.colorServo.setPosition(0.6);
         }
 
     }
