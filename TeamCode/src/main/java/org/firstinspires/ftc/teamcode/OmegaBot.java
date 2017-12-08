@@ -45,10 +45,12 @@ public class OmegaBot {
 
         leftDrive.setMode(initialMode);
         rightDrive.setMode(initialMode);
-        arm.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        arm.setMode(initialMode);
 
         leftDrive.setDirection(DcMotorSimple.Direction.FORWARD);
         rightDrive.setDirection(DcMotorSimple.Direction.REVERSE);
+        arm.setDirection(DcMotorSimple.Direction.FORWARD);
+        colorServo.setDirection(Servo.Direction.REVERSE);
 
         leftDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         rightDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);

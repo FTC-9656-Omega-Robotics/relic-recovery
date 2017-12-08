@@ -17,6 +17,7 @@ public class ColorBlueAuto extends LinearOpMode {
     OmegaBot robot = new OmegaBot(DcMotor.RunMode.RUN_USING_ENCODER);
 
     private int initialPos, finalPos;
+    private boolean ourBallIsBackward;
 
     private ElapsedTime runtime = new ElapsedTime();
 
@@ -30,13 +31,26 @@ public class ColorBlueAuto extends LinearOpMode {
 
 
         waitForStart();
-        while (opModeIsActive()) {
-            if (robot.colorSensor.blue() > robot.colorSensor.red()) {
-                while (runtime.seconds() < 2) {
-                    robot.leftDrive.setPower(-1);
-                    robot.rightDrive.setPower(-1);
-                }
+        runtime.reset();
+
+        while (runtime.seconds() < 2) {
+            robot.colorServo.setPosition(0.7);
+        }
+        robot.colorServo.setPosition(0.5);
+        ourBallIsBackward = robot.colorSensor.blue() > robot.colorSensor.red();
+        runtime.reset();
+        while (runtime.seconds() > 2) {
+            if (ourBallIsBackward) {
+                robot.leftDrive.setPower(1);
+                robot.rightDrive.setPower(1);
+            } else {
+                robot.leftDrive.setPower(-1);
+                robot.rightDrive.setPower(-1);
             }
+        }
+
+        while (opModeIsActive()) {
+
 
             if (robot.colorSensor.blue() > robot.colorSensor.red()) {
                 telemetry.addLine("I see blue.");
