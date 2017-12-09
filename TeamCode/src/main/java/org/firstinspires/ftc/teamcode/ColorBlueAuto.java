@@ -33,24 +33,24 @@ public class ColorBlueAuto extends LinearOpMode {
         waitForStart();
         runtime.reset();
 
-        while (runtime.seconds() < 2) {
-            robot.colorServo.setPosition(0.7);
-        }
-        robot.colorServo.setPosition(0.5);
+        robot.colorServo.setPosition(robot.colorServoOpenPos);
+        sleep(3000);
         ourBallIsBackward = robot.colorSensor.blue() > robot.colorSensor.red();
-        runtime.reset();
-        while (runtime.seconds() > 2) {
-            if (ourBallIsBackward) {
-                robot.leftDrive.setPower(1);
-                robot.rightDrive.setPower(1);
-            } else {
-                robot.leftDrive.setPower(-1);
-                robot.rightDrive.setPower(-1);
-            }
+        sleep(1000);                                                //wait 1 second before continuing with code
+
+        telemetry.addData("Team color is behind me", ourBallIsBackward);
+
+        if (ourBallIsBackward) {
+            robot.leftDrive.setPower(1);
+            robot.rightDrive.setPower(1);
+        } else {
+            robot.leftDrive.setPower(-1);
+            robot.rightDrive.setPower(-1);
         }
+        sleep(1000);
 
+        robot.colorServo.setPosition(robot.colorServoClosePos);
         while (opModeIsActive()) {
-
 
             if (robot.colorSensor.blue() > robot.colorSensor.red()) {
                 telemetry.addLine("I see blue.");

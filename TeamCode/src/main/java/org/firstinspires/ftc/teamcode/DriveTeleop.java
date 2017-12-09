@@ -3,6 +3,7 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.Servo;
 
 @TeleOp(name = "DriveTeleop", group = "Testers")
 //@Disabled
@@ -19,10 +20,6 @@ public class DriveTeleop extends OpMode {
     public void init() {
         robot.init(hardwareMap);
         telemetry.addData("Initialization", "Complete");
-
-        robot.rightServo.setPosition(0.7);
-        robot.colorServo.setPosition(0.3);
-        //robot.rightServo.setDirection(Servo.Direction.REVERSE);
         robot.leftDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         robot.rightDrive.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         robot.arm.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
@@ -59,15 +56,15 @@ public class DriveTeleop extends OpMode {
         telemetry.addData("Encoder Position", position);
 
         if (gamepad2.x) {
-            robot.rightServo.setPosition(0.8);
+            robot.rightServo.setPosition(robot.rightServoOpenPos);
         } else if (gamepad2.y) {
-            robot.rightServo.setPosition(1);
+            robot.rightServo.setPosition(robot.rightServoClosePos);
         }
 
-        if (gamepad2.right_bumper) {                //works do not change
-            robot.colorServo.setPosition(0.85);
-        } else if (gamepad2.left_bumper) {
-            robot.colorServo.setPosition(0.3);
+        if (gamepad2.left_bumper) {                //works do not change
+            robot.colorServo.setPosition(robot.colorServoClosePos);
+        } else if (gamepad2.right_bumper) {
+            robot.colorServo.setPosition(robot.colorServoOpenPos);
         }
 
     }

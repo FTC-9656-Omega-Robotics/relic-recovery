@@ -70,7 +70,7 @@ public class DriveTeleopEncoder extends OpMode {
         }
 
         if (gamepad2.x) {
-            robot.colorServo.setPosition(0.9);
+            robot.colorServo.setPosition(1);
         }
         else if (gamepad2.y){
             robot.colorServo.setPosition(0.5);

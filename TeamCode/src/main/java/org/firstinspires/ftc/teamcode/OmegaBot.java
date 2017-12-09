@@ -19,6 +19,11 @@ public class OmegaBot {
     public ColorSensor colorSensor = null;
     public Servo colorServo = null;
 
+    public double rightServoClosePos = 0.5;
+    public double rightServoOpenPos = 0.7;
+    public double colorServoClosePos = 0.7;
+    public double colorServoOpenPos = 0;
+
     private DcMotor.RunMode initialMode = null;
 
     HardwareMap map = null;
