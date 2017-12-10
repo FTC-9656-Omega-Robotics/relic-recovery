@@ -56,12 +56,12 @@ public class DriveTeleop extends OpMode {
         telemetry.addData("Encoder Position", position);
 
         if (gamepad2.x) {
-            robot.rightServo.setPosition(robot.rightServoOpenPos);
+            robot.release();
         } else if (gamepad2.y) {
-            robot.rightServo.setPosition(robot.rightServoClosePos);
+            robot.grab();
         }
 
-        if (gamepad2.left_bumper) {                //works do not change
+        if (gamepad2.left_bumper) {
             robot.colorServo.setPosition(robot.colorServoClosePos);
         } else if (gamepad2.right_bumper) {
             robot.colorServo.setPosition(robot.colorServoOpenPos);
