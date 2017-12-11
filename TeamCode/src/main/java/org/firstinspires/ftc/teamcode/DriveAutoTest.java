@@ -35,10 +35,9 @@ public class DriveAutoTest extends LinearOpMode {
         waitForStart();
         runtime.reset();
 
-
-        while(opModeIsActive() && runtime.seconds() < 1) {
+        while(opModeIsActive() && runtime.seconds() <= 1) {
             robot.leftDrive.setPower(1);
-            robot.rightDrive.setPower(-1);
+            robot.rightDrive.setPower(1);
         }
     }
 

@@ -43,7 +43,7 @@ public class ColorBlueAuto extends LinearOpMode {
         telemetry.addData("Team color is behind me", ourBallIsBackward);
 
         /**
-         * Drives robot either backward or forward for 1 second
+         * Drives robot either backward or forward 6 inches
          */
         if (ourBallIsBackward) {
             robot.leftDrive.setPower(1);                                        //Robot moves 60 inches per power unit of 1 per second
@@ -52,9 +52,10 @@ public class ColorBlueAuto extends LinearOpMode {
             robot.leftDrive.setPower(-1);
             robot.rightDrive.setPower(-1);
         }
-        sleep(1000);
+        sleep(100);
         robot.colorServo.setPosition(robot.colorServoClosePos);
         robot.stopRobot();
+        sleep(100);
 
         /**
          * Estimated path to reach parking in safe zone, adjusted on whether robot first moved backward or forward
@@ -68,18 +69,18 @@ public class ColorBlueAuto extends LinearOpMode {
         if(ourBallIsBackward) {
             robot.leftDrive.setPower(1);
             robot.rightDrive.setPower(1);
-            sleep(4000);
+            sleep(700);
         } else {                            //i.e., if the robot initially moved forward
             robot.leftDrive.setPower(1);
             robot.rightDrive.setPower(1);
-            sleep(3000);
+            sleep(500);
         }
         robot.leftDrive.setPower(-1);
         robot.rightDrive.setPower(1);
-        sleep(1000);            //assuming it takes 1 second to turn 90 deg
+        sleep(10);            //assuming it takes 1 second to turn 90 deg
         robot.leftDrive.setPower(1);
         robot.rightDrive.setPower(1);
-        sleep(500);
+        sleep(50);
         robot.stopRobot();
 
         /**

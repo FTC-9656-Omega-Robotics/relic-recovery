@@ -10,10 +10,10 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
-@Autonomous(name = "ColorRedAuto", group = "Testers")
+@Autonomous(name = "ColorBlueAuto2", group = "Testers")
 //@Disabled
 
-public class ColorRedAuto extends LinearOpMode {
+public class ColorBlueAuto2 extends LinearOpMode {
 
     OmegaBot robot = new OmegaBot(DcMotor.RunMode.RUN_USING_ENCODER);
 
@@ -37,7 +37,7 @@ public class ColorRedAuto extends LinearOpMode {
 
         robot.colorServo.setPosition(robot.colorServoOpenPos);
         sleep(3000);
-        ourBallIsBackward = robot.colorSensor.red() > robot.colorSensor.blue();
+        ourBallIsBackward = robot.colorSensor.blue() > robot.colorSensor.red();
         sleep(1000);                                                //wait 1 second before continuing with code
 
         telemetry.addData("Team color is behind me", ourBallIsBackward);
@@ -52,7 +52,7 @@ public class ColorRedAuto extends LinearOpMode {
             robot.leftDrive.setPower(-1);
             robot.rightDrive.setPower(-1);
         }
-        sleep(100);
+        sleep(300);
         robot.colorServo.setPosition(robot.colorServoClosePos);
         robot.stopRobot();
         sleep(100);
@@ -66,21 +66,9 @@ public class ColorRedAuto extends LinearOpMode {
          * for final robot mech design.
          * Rotation speed based on time is still unknown.
          */
-        if(ourBallIsBackward) {
-            robot.leftDrive.setPower(1);
-            robot.rightDrive.setPower(1);
-            sleep(700);
-        } else {                            //i.e., if the robot initially moved forward
-            robot.leftDrive.setPower(1);
-            robot.rightDrive.setPower(1);
-            sleep(500);
-        }
-        robot.leftDrive.setPower(-1);
-        robot.rightDrive.setPower(1);
-        sleep(10);            //assuming it takes 1 second to turn 90 deg
-        robot.leftDrive.setPower(1);
-        robot.rightDrive.setPower(1);
-        sleep(50);
+        robot.moveBackward(36);
+        robot.turn(90, "left");
+        robot.moveForward(12);
 
         /**
          * This is just for debugging purposes
