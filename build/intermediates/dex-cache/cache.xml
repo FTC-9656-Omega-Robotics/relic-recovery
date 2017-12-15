@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/tvt/.android/build-cache/7dfdfbdff6b8247523f5657136ed660991557482/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1ce86a6340781abf3d876eba190efa34ae92d2f9">
+        <dex dex="/Users/tvt/AndroidStudioProjects/relic-recovery/TeamCode/build/intermediates/pre-dexed/debug/classes_8c2a99e290f42fda1c2f8e891132e0541142b1f8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tvt/.android/build-cache/e5f7e23911ccace701e6fc70664f017612a9f311/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6c6d1584a392ebfee01efd98e6caaf6a9e5ac51d">
+        <dex dex="/Users/tvt/AndroidStudioProjects/relic-recovery/TeamCode/build/intermediates/pre-dexed/debug/classes_9c1e5e2cffd59e4bc0715084485bd0f6b6230904.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tvt/.android/build-cache/beac9fee9f0f4a9785e1291284a132125a537b9e/output/jars/libs/Vuforia.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="91b46366eb9f8203073ee2935087c097c888c0ed">
+        <dex dex="/Users/tvt/AndroidStudioProjects/relic-recovery/TeamCode/build/intermediates/pre-dexed/debug/Vuforia_c676a599272f8ad3b8ba8bb6cf75af3f24ac670d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tvt/.android/build-cache/3000ee96b695be92554c87de0103ec80f6f9e27a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9dafed45e330aec14abcce05bdb7bbdb2a2d7092">
+        <dex dex="/Users/tvt/AndroidStudioProjects/relic-recovery/TeamCode/build/intermediates/pre-dexed/debug/classes_7a7f3c4d3ab41b51f456a59ee96a8cfa86328258.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tvt/.android/build-cache/beac9fee9f0f4a9785e1291284a132125a537b9e/output/jars/libs/javac.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c576121aac49e547b39aedfb1daa29782db4166c">
+        <dex dex="/Users/tvt/AndroidStudioProjects/relic-recovery/TeamCode/build/intermediates/pre-dexed/debug/javac_88528ac9965cdbcba0bb57a7d51c13a8ffe62ff7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tvt/.android/build-cache/2cebb2fb0794b370c6f623de53dd54f10f32dfb8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e444b561b0feba789cac93c5db61f08ef8c25ee6">
+        <dex dex="/Users/tvt/AndroidStudioProjects/relic-recovery/TeamCode/build/intermediates/pre-dexed/debug/classes_2b9896d17c5387ad1c5718f799e221902b084004.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tvt/.android/build-cache/beac9fee9f0f4a9785e1291284a132125a537b9e/output/jars/libs/gson-extras-0.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b30c2655badcc7ce97f84e49f777b7dd154bad57">
+        <dex dex="/Users/tvt/AndroidStudioProjects/relic-recovery/TeamCode/build/intermediates/pre-dexed/debug/gson-extras-0.2.1_4f13d3622fdfe86aade03a02cbc8c78a4922cf88.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tvt/.android/build-cache/beac9fee9f0f4a9785e1291284a132125a537b9e/output/jars/libs/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5a214d3b1b12e72f4fb0d5d5d8d0ec43c96de2b5">
+        <dex dex="/Users/tvt/AndroidStudioProjects/relic-recovery/TeamCode/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_9a4195388848a2fc87a0048e9e141d3bc96849af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d0c919e219a954111faa31c905d63e0e30c88b6b">
+        <dex dex="/Users/tvt/AndroidStudioProjects/relic-recovery/TeamCode/build/intermediates/pre-dexed/debug/classes_9f70ef8666b187059e51f92a7fd340e9945eece1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tvt/.android/build-cache/7f882b806b92c93d098c6c075e4f16a9b3a88362/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9403be210676ed196cdcc64c7391b9ae2361c174">
+        <dex dex="/Users/tvt/AndroidStudioProjects/relic-recovery/TeamCode/build/intermediates/pre-dexed/debug/classes_edea9eca87906841d51adc22c732089ed44b5eab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tvt/.android/build-cache/beac9fee9f0f4a9785e1291284a132125a537b9e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5d8f95b7b91c8a132c514f5dbe75340305e6883b">
+        <dex dex="/Users/tvt/AndroidStudioProjects/relic-recovery/TeamCode/build/intermediates/pre-dexed/debug/classes_42232873d30cc3f90b5f6dd9b397d12bedfd295e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tvt/.android/build-cache/64a5546293e8d78dc4ee91673b9c2713135582f9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7558c70f3b0b473ca494059b37f16ca880ac43fd">
+        <dex dex="/Users/tvt/AndroidStudioProjects/relic-recovery/TeamCode/build/intermediates/pre-dexed/debug/classes_5d295ae2e00341d99c0b579b3afa9d0709168ba6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tvt/.android/build-cache/beac9fee9f0f4a9785e1291284a132125a537b9e/output/jars/libs/gson-2.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e118dd0900e4a18fb928ebb8df2d9fbda78f2b5d">
+        <dex dex="/Users/tvt/AndroidStudioProjects/relic-recovery/TeamCode/build/intermediates/pre-dexed/debug/gson-2.8.0_8d84d5dc8a4375888418772eb9c55e5485f2626e.jar" />
+    </item>
+
+</items>

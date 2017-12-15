@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/res/merged/debug/raw/errormessage.wav",
+        "source": "/Users/tvt/.android/build-cache/64a5546293e8d78dc4ee91673b9c2713135582f9/output/res/raw/errormessage.wav"
+    },
+    {
+        "merged": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/res/merged/debug/raw/texture_vertex_shader.glsl",
+        "source": "/Users/tvt/.android/build-cache/beac9fee9f0f4a9785e1291284a132125a537b9e/output/res/raw/texture_vertex_shader.glsl"
+    },
+    {
+        "merged": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/res/merged/debug/raw/color_fragment_shader.glsl",
+        "source": "/Users/tvt/.android/build-cache/beac9fee9f0f4a9785e1291284a132125a537b9e/output/res/raw/color_fragment_shader.glsl"
+    },
+    {
+        "merged": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/res/merged/debug/raw/cube_mesh_fragment_shader.glsl",
+        "source": "/Users/tvt/.android/build-cache/beac9fee9f0f4a9785e1291284a132125a537b9e/output/res/raw/cube_mesh_fragment_shader.glsl"
+    },
+    {
+        "merged": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/res/merged/debug/raw/texture_fragment_shader.glsl",
+        "source": "/Users/tvt/.android/build-cache/beac9fee9f0f4a9785e1291284a132125a537b9e/output/res/raw/texture_fragment_shader.glsl"
+    },
+    {
+        "merged": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/res/merged/debug/raw/warningmessage.wav",
+        "source": "/Users/tvt/.android/build-cache/64a5546293e8d78dc4ee91673b9c2713135582f9/output/res/raw/warningmessage.wav"
+    },
+    {
+        "merged": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/res/merged/debug/raw/chimedisconnect.wav",
+        "source": "/Users/tvt/.android/build-cache/64a5546293e8d78dc4ee91673b9c2713135582f9/output/res/raw/chimedisconnect.wav"
+    },
+    {
+        "merged": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/res/merged/debug/raw/nxtstartupsound.wav",
+        "source": "/Users/tvt/.android/build-cache/64a5546293e8d78dc4ee91673b9c2713135582f9/output/res/raw/nxtstartupsound.wav"
+    },
+    {
+        "merged": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/res/merged/debug/raw/simple_vertex_shader.glsl",
+        "source": "/Users/tvt/.android/build-cache/beac9fee9f0f4a9785e1291284a132125a537b9e/output/res/raw/simple_vertex_shader.glsl"
+    },
+    {
+        "merged": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/res/merged/debug/raw/chimeconnect.wav",
+        "source": "/Users/tvt/.android/build-cache/64a5546293e8d78dc4ee91673b9c2713135582f9/output/res/raw/chimeconnect.wav"
+    },
+    {
+        "merged": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/res/merged/debug/raw/cube_mesh_vertex_shader.glsl",
+        "source": "/Users/tvt/.android/build-cache/beac9fee9f0f4a9785e1291284a132125a537b9e/output/res/raw/cube_mesh_vertex_shader.glsl"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/res/merged/release/menu/main_menu.xml",
+        "source": "/Users/tvt/.android/build-cache/2cebb2fb0794b370c6f623de53dd54f10f32dfb8/output/res/menu/main_menu.xml"
+    },
+    {
+        "merged": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/res/merged/release/menu/menu_server.xml",
+        "source": "/Users/tvt/.android/build-cache/7dfdfbdff6b8247523f5657136ed660991557482/output/res/menu/menu_server.xml"
+    },
+    {
+        "merged": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/res/merged/release/menu/ftc_robot_controller.xml",
+        "source": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/src/main/res/menu/ftc_robot_controller.xml"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/res/merged/debug/drawable/button_shape.xml",
+        "source": "/Users/tvt/.android/build-cache/64a5546293e8d78dc4ee91673b9c2713135582f9/output/res/drawable/button_shape.xml"
+    },
+    {
+        "merged": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/res/merged/debug/drawable/icon_menu.png",
+        "source": "/Users/tvt/.android/build-cache/2cebb2fb0794b370c6f623de53dd54f10f32dfb8/output/res/drawable/icon_menu.png"
+    },
+    {
+        "merged": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/res/merged/debug/drawable/feedback_shape_orange.xml",
+        "source": "/Users/tvt/.android/build-cache/beac9fee9f0f4a9785e1291284a132125a537b9e/output/res/drawable/feedback_shape_orange.xml"
+    },
+    {
+        "merged": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/res/merged/debug/drawable/icon_robotcontroller.png",
+        "source": "/Users/tvt/.android/build-cache/2cebb2fb0794b370c6f623de53dd54f10f32dfb8/output/res/drawable/icon_robotcontroller.png"
+    },
+    {
+        "merged": "/Users/tvt/AndroidStudioProjects/relic-recovery/FtcRobotController/build/intermediates/res/merged/debug/drawable/black_border.xml",
+        "source": "/Users/tvt/.android/build-cache/7dfdfbdff6b8247523f5657136ed660991557482/output/res/drawable/black_border.xml"
+    }
+]
